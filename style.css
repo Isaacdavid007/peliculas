@@ -1,0 +1,57 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+    background: rgb(243, 241, 241);
+ 
+}
+.layout{
+    display: grid;
+    grid-template-areas: 
+    
+    "header    header   header   header"
+    "menu      menu    menu      menu"
+    "content  content  content  lateral"
+    "footer   footer   footer   footer"
+           ;
+    grid-template-rows: 120px 100px auto 120px;
+}
+.header{
+    grid-area: header;
+                 
+      
+}
+.menu{
+    grid-area: menu;
+    width: 100%;
+    background-color: rgb(59, 62, 238, 1);  green, blue, alpha);
+
+}   
+.menuitem{
+     height: 100px;
+display:flex;
+justify-content: center;
+align-items: center;                     
+list-style: none;
+
+}
+.menu .item  .item {
+    padding-left: 20px;
+    padding-right: 20px;
+}  
+.menu.item.item:hover a{
+    letter-spacing: 7px; 
+    text-shadow: 0px ;
+}  
+
+.menu .item  .item a{
+   color: blanchedalmond;
+   text-decoration: none;
+}  
+.content{
+    grid-area: content;
+} 
+.footer{
+    grid-area: footer;
+} 
